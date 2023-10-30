@@ -53,7 +53,7 @@ namespace Tyuiu.MelehovAG.Sprint3.Task1.V0
             Console.WriteLine("Переменная X = " + value);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + stopValue);
-
+             
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
