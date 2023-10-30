@@ -9,8 +9,19 @@ namespace Tyuiu.MelehovAG.Sprint3.Task2.V0.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidGetSumSeries()
         {
+            DataService ds = new DataService();
+
+            double value = 5;
+            int startValue = 1;
+            int stopValue = 10;
+
+            double res = ds.GetSumSeries(value, startValue, stopValue);
+
+            double wait = 56.552;
+
+            Assert.AreEqual(wait, res);
         }
     }
 }

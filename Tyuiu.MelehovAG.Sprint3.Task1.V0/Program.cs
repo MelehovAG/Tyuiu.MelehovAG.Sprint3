@@ -39,7 +39,7 @@ namespace Tyuiu.MelehovAG.Sprint3.Task1.V0
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла while                                              *");
-            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
             Console.WriteLine("* Вариант #0                                                              *");
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
