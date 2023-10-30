@@ -50,7 +50,6 @@ namespace Tyuiu.MelehovAG.Sprint3.Task2.V0
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
-            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }

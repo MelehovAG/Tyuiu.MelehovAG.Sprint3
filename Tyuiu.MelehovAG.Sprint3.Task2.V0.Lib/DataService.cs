@@ -14,7 +14,7 @@ namespace Tyuiu.MelehovAG.Sprint3.Task2.V0.Lib
         {
             double SumSeries = 0;
             do
-            {
+            { 
                 SumSeries = SumSeries + ((1 / Math.Sin(startValue)) + value);
                 startValue++;
             } while (startValue <= stopValue);
