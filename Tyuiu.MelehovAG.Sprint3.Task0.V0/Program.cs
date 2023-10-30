@@ -52,7 +52,7 @@ namespace Tyuiu.MelehovAG.Sprint3.Task0.V0
             Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ: ");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
             Console.WriteLine("***************************************************************************");

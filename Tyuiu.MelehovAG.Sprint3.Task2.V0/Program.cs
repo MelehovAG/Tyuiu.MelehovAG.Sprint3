@@ -30,8 +30,8 @@ namespace Tyuiu.MelehovAG.Sprint3.Task2.V0
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Оператор цикла while                                              *");
-            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Тема: Оператор цикла do-while                                           *");
+            Console.WriteLine("* Задание #2                                                              *");
             Console.WriteLine("* Вариант #0                                                              *");
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
@@ -47,9 +47,9 @@ namespace Tyuiu.MelehovAG.Sprint3.Task2.V0
             Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ: ");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries(value, startValue, stopValue));
+            Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
             Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
