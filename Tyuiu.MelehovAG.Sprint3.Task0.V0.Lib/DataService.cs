@@ -15,7 +15,7 @@ namespace Tyuiu.MelehovAG.Sprint3.Task0.V0.Lib
             double sumSeries = 0;
             int i;
             for (i = startValue; i <= stopValue; i++) 
-            { 
+            {
                 sumSeries = sumSeries + ((1 / Math.Sin(i)) + value);
             }
             return Math.Round(sumSeries,3);
