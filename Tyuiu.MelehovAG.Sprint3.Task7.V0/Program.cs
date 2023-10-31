@@ -21,22 +21,39 @@ namespace Tyuiu.MelehovAG.Sprint3.Task7.V0
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ЗАДАНИЕ:                                                                *");
-            Console.WriteLine("* Напишите программу, которая ищет среди целых чисел, принадлежащих       *");
-            Console.WriteLine("* числовому отрезку [10, 15], сумму всех делителей                        *");
+            Console.WriteLine("* Написать программу, которая выводит таблицу значений функции            *");
+            Console.WriteLine("* (произвести табулирование) f(x) = sin(x) на заданном диапазоне -5, 5    *");
+            Console.WriteLine("* с шагом 1. Произвести проверку деления на ноль.                         *");
+            Console.WriteLine("* При делении на ноль вернуть значение 0.                                 *");
+            Console.WriteLine("* Значения округлить до двух знаков после запятой.                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int startValue = 10;
-            int stopValue = 15;
+            int startValue = -5;
+            int stopValue = 5;
 
-            Console.WriteLine("Начало отрезка = " + startValue);
-            Console.WriteLine("Конец отрезка = " + stopValue);
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
+
+            int len = ds.GetMassFunction(startValue, stopValue).Length;
+
+            double[] valueArray;
+            valueArray = new double[len];
+
+            valueArray = ds.GetMassFunction(startValue, stopValue);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Сумма делителей = " + ds.GetSumTheDivisors(startValue, stopValue));
+            Console.WriteLine("+----------+----------+");
+            Console.WriteLine("|    X     |    f(x)  |");
+            Console.WriteLine("+----------+----------+");
+            for (int i = 0; i <= len - 1; i++) {
+                Console.WriteLine("|{0,5:d}     |   {1, 5:f2}  |", startValue, valueArray[i]);
+                startValue++;
+            }
+            Console.WriteLine("+----------+----------+");
             Console.ReadKey();
         }
     }
