@@ -9,7 +9,7 @@ namespace Tyuiu.MelehovAG.Sprint3.Task6.V0.Test
     {
         [TestMethod]
         public void TestMethod1()
-        {
+        { 
             DataService ds = new DataService();
 
             int startValue = 10;

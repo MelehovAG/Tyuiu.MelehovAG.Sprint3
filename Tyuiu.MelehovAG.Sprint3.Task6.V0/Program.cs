@@ -26,22 +26,16 @@ namespace Tyuiu.MelehovAG.Sprint3.Task6.V0
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
 
-            int x = 5;
-            int startValue1 = 1;
-            int stopValue1 = 5;
-            int startValue2 = 1;
-            int stopValue2 = 10;
+            int startValue = 10;
+            int stopValue = 15;
 
-            Console.WriteLine("Переменная = " + x);
-            Console.WriteLine("Старт шага первой суммы ряда = " + startValue1);
-            Console.WriteLine("Конец шага первой суммы ряда = " + stopValue1);
-            Console.WriteLine("Старт шага второй суммы ряда = " + startValue2);
-            Console.WriteLine("Конец шага второй суммы ряда = " + stopValue2);
+            Console.WriteLine("Начало отрезка = " + startValue);
+            Console.WriteLine("Конец отрезка = " + stopValue);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Сумма сумм ряда = " + ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2));
+            Console.WriteLine("Сумма делителей = " + ds.GetSumTheDivisors(startValue, stopValue));
             Console.ReadKey();
         }
     }

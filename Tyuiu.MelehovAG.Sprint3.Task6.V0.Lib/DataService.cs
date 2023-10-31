@@ -10,7 +10,7 @@ namespace Tyuiu.MelehovAG.Sprint3.Task6.V0.Lib
     public class DataService : ISprint3Task6V0
     {
         public int GetSumTheDivisors(int startValue, int stopValue)
-        {
+        { 
             int x;
             int sum = 0;
             for (x = startValue; x <= stopValue; x++)
