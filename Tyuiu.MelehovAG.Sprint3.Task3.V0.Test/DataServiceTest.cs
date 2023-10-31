@@ -9,8 +9,18 @@ namespace Tyuiu.MelehovAG.Sprint3.Task3.V0.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidGetCharCount()
         {
+            DataService ds = new DataService();
+
+            string str = "abcdef abcdef abcdef abcdefabcdefabcdef";
+            char chr = 'a';
+
+            int res = ds.GetCharCount(str, chr);
+
+            int wait = 6;
+
+            Assert.AreEqual(wait, res);
         }
     }
 }
